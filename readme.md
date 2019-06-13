@@ -14,16 +14,17 @@ Items Classes:
 * BackstagePasses
 * Regular
 * Sulfuras
+* Conjured
 
 Properties features:
 * The Quality is always positive and can't be more than 50 (Sulfuras Quality is always 80 and SellIn is endless)
 * The Quality decreases by 1 every day 
-  * AgedBrie Quality increases the older it gets but still can't be more than 50
-  * BackstagePasses Quality grows by:
-    * 2 when SellIn <= 10
-    * 3 when SellIn <= 5
+  * AgedBrie Quality increases the older it gets but it still can't be more than 50
+  * BackstagePasses Quality: 
+    * grows by 2 when SellIn <= 10
+    * grows by 3 when SellIn <= 5
     * Equals 0 when SellIn = 0 
-* The SellIn decreases by 1 every day too 
+* The SellIn decreases by 1 every day as well
 * When SellIn <= 0, the quality degrades by 2 
 
 You should refactor the existing God method #update_quality and add logic for the Conjured Items.
@@ -32,7 +33,7 @@ Conjured Items properties:
 * The Quaity increases by 2 every day
 * When SellIn <=0, the quality degrades by 4
 
-You're not allowed to alter Item Class or Items property.
+You're not allowed to alter Item class or Items property.
 
 ### Result
 
