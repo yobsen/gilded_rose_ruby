@@ -37,4 +37,9 @@ You're not allowed to alter Item class or Items property.
 
 ### Result
 
+I've isolated items using single responsibility classes and used Factory pattern to instantiate those specific items.
+
+The code is written by TDD with RSpec and linted by Rubocop.
+The [terminal-table gem](https://github.com/tj/terminal-table) is used for output.
+
 ![Gilded Rose Table](https://i.imgur.com/RnYHT3F.png)
